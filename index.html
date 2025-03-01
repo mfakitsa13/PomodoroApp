@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer-box">
+  <div class="time-left" id="pause-time-left">5:00</div>
+  <div class="timer-label">Pause Timer</div>
+</div>
+<div class="controls">
+  <div class="buttons">
+    <button id="pause-decrement">- 1 Min</button>
+    <button id="pause-increment">+ 1 Min</button>
+  </div>
+</div>
+<!-- Session Timer -->
+<div class="timer-box">
+  <div class="time-left" id="time-left">25:00</div>
+  <div class="timer-label">Session Timer</div>
+</div>
+<div class="controls">
+  <div class="buttons">
+    <button id="decrement">- 1 Min</button>
+    <button id="increment">+ 1 Min</button>
+  </div>
+</div>
+<!-- Timer Controls -->
+<div class="controls">
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  <button id="reset">Reset</button>
+</div>
+<!-- Audio File for Beep Sound -->
+<audio id="beep" preload="auto" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
